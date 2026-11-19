@@ -1,0 +1,9 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Opening Zotero…</title>
+<p>Opening Zotero… <a id="a" href="#">Click here if nothing happens</a></p>
+<script>
+  const target = "zotero://open-pdf/" + location.hash.slice(1);
+  document.getElementById("a").href = target;
+  location.replace(target);
+</script>
